@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Fondamento&family=Roboto+Condensed:wght@300&family=Roboto:wght@100;500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #98ddca;
+    height: 100vh;
+    margin: 0;
+}
+.periodico {
+    position: relative;
+    max-width: 750px;
+    min-width: 200px;
+    height: max-content;
+    padding: 1rem 1.5rem;
+    background-color: #f9f7f1;
+    border-radius: 5px;
+}
+}
+.periodico::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    top: 10px;
+    left: 10px;
+    z-index: -1;
+    background-color: #e6e3dc;
+    border-radius: 5px;
+}
+.periodico::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    top: 20px;
+    left: 20px;
+    z-index: -2;
+    background-color: #dad7d1;
+    border-radius: 5px;
+}
+.name {
+    display: block;
+    text-align: center;
+    font-size: 250%;
+}
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+.title h1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 190%;
+}
+.content {
+    display: flex;
+}
+.content .left-side{
+    margin-right: 10px;
+    width: 50%;
+}
+.content .left-side h2 {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 4px 0 0;
+    padding: 0 10px;
+}
+.content .left-side div {
+    display: flex;
+}
+
+.content .left-side div p:first-child {
+    margin-right: 10px;
+}
+
+.content .left-side div p {
+    font-size: 15px;
+}
+
+.content .right-side {
+    width: 50%;
+}
+
+.content .right-side img {
+    transform: rotate(-1deg);
+    width: 100%;
+}
+
+.content .right-side p {
+    font-size: 10px;
+}
